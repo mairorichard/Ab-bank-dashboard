@@ -1,0 +1,274 @@
+.transfer {
+  display: flex;
+  min-height: 100vh;
+}
+.transferContainer {
+  padding: 50px 40px;
+  flex: 4;
+  background-color: #f3f4f6;
+}
+
+.transferContainer h1 {
+  font-size: 24px;
+  color: #646464;
+}
+.t-cards {
+  display: flex;
+  /* align-items: stretch; */
+  gap: 40px;
+}
+
+/* styles for the main card with gradient */
+.mainCard {
+  background: linear-gradient(180deg, #028bcc 0%, #0471a6 59.71%, #055983 100%);
+  border-radius: 20px;
+  width: 100%;
+  height: 220px;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  padding: 15px;
+  color: #fff;
+}
+.name {
+  font-size: 18px;
+  font-weight: 500;
+}
+.namesHeader {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+/* the code for --current */
+.current {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+  margin-top: 10px;
+}
+.circle {
+  background-color: #4ade80;
+}
+.current-txt {
+  font-size: 12px;
+  margin-left: 5px;
+}
+.transactionHistory-btn {
+  /* align-self: flex-end; */
+  margin-top: 2rem;
+  color: black;
+  background-color: #fff;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 3px 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.mainCard-right {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+.mainCard-right-heading {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.others {
+  flex: 1;
+  display: grid;
+  grid-gap: 10px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.small-card {
+  background-color: #d9d9d9;
+  padding: 15px;
+  border-radius: 20px;
+  width: 100%;
+  height: 100px;
+}
+.small-title {
+  font-size: 14px;
+}
+.amount {
+  margin-top: 5px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.t-form {
+  display: grid;
+  gap: 20px;
+  justify-content: space-between;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 50px;
+}
+select {
+  width: 100%;
+  height: 50px;
+  background-color: #e5e7eb;
+  border-radius: 8px;
+}
+.t-input {
+  width: 100%;
+  height: 50px;
+  background-color: #e5e7eb;
+  border-radius: 8px;
+}
+.t-input input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  margin-left: 10px;
+}
+.main-t-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 40px;
+  background: #028bcc;
+  border-radius: 7px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 12px;
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 1200px) {
+  /*Tablets [601px -> 1200px]*/
+  .transfer {
+    height: 100%;
+  }
+  .transferContainer h1 {
+    font-size: 33px;
+  }
+  .t-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .mainCard {
+    height: 240px;
+  }
+  /* .others {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  .transactionHistory-btn {
+    font-size: 10px;
+    font-weight: 500;
+    padding: 3px 5px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  /* .t-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  } */
+  select {
+    width: 100%;
+  }
+  .t-input {
+    width: 100%;
+  }
+  .transactionHistory-btn {
+    margin-top: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /*Big smartphones [426px -> 600px]*/
+  .transfer {
+    width: 100%;
+  }
+  .transferContainer h1 {
+    font-size: 33px;
+  }
+
+  .mainCard {
+    height: 240px;
+  }
+  .others {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .transactionHistory-btn {
+    font-size: 10px;
+    font-weight: 500;
+    padding: 3px 5px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .t-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  select {
+    width: 100%;
+  }
+  .t-input {
+    width: 100%;
+  }
+  .transactionHistory-btn {
+    margin-top: 3.5rem;
+  }
+}
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+  .transfer {
+    height: 100%;
+  }
+  .transferContainer h1 {
+    font-size: 33px;
+  }
+  .t-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .mainCard {
+    height: 240px;
+  }
+  /* .others {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  .t-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  select {
+    width: 100%;
+  }
+  .t-input {
+    width: 100%;
+  }
+  .transactionHistory-btn {
+    margin-top: 3.5rem;
+  }
+}

@@ -1,0 +1,76 @@
+.settings {
+  display: flex;
+  min-height: 100vh;
+}
+
+.settingsContainer {
+  flex: 4;
+  padding: 50px 40px;
+  background-color: #f3f4f6;
+}
+
+.settingsContainer h1 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #646464;
+  margin-bottom: 20px;
+}
+
+.s-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.s-cards .card {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.s-cards .card h3 {
+  font-weight: 500;
+  font-size: 14px;
+  color: #055983;
+}
+
+.desc {
+  font-size: 10px;
+}
+@media only screen and (max-width: 1200px) {
+  /*Tablets [601px -> 1200px]*/
+
+  .settingsContainer {
+    padding: 20px 30px;
+  }
+  .settings {
+    height: 100%;
+  }
+  .card {
+    width: 100%;
+    height: 90px;
+  }
+  .s-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 600px) {
+  /*Big smartphones [426px -> 600px]*/
+
+  .s-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card {
+    width: 100%;
+    height: 85px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+
+  .s-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

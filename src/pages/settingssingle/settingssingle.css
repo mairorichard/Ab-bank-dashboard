@@ -1,0 +1,87 @@
+.settingssingle {
+  display: flex;
+}
+.singleContainer {
+  padding: 50px 40px;
+  flex: 4;
+  background-color: #f3f4f6;
+}
+
+.c-inputs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.c-icon {
+  font-size: 24px;
+}
+.single-heading {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 500;
+  color: #646464;
+  margin-bottom: 20px;
+}
+.c-input {
+  width: 100%;
+  margin-top: 20px;
+  height: 50px;
+  background-color: #e5e7eb;
+  padding-left: 18px;
+  border-radius: 8px;
+}
+
+.c-input input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  margin-left: 10px;
+}
+
+.c-input input::placeholder {
+  font-size: 14px;
+  color: #646464;
+}
+
+.password-btn {
+  width: 140px;
+  height: 40px;
+  background: #028bcc;
+  border-radius: 7px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 12px;
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 1200px) {
+  /*Tablets [601px -> 1200px]*/
+  .single-heading {
+    font-size: 18px;
+    font-weight: 500;
+    color: #646464;
+    margin-bottom: 20px;
+  }
+  .c-icon {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /*Big smartphones [426px -> 600px]*/
+  .c-inputs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  /* .c-input {
+    width: 200px;
+  } */
+}
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+  .password-btn {
+    width: 100%;
+  }
+}

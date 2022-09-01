@@ -1,0 +1,123 @@
+.sidebar {
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffff;
+  z-index: 9999;
+
+  box-shadow: 3px 1px 5px -3px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 3px 1px 5px -3px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 3px 1px 5px -3px rgba(0, 0, 0, 0.7);
+}
+
+.bottom {
+  /* padding-left: 20px; */
+  /* margin-left: 20px; */
+  margin-top: 5px;
+}
+
+.bottom ul {
+  list-style: none;
+  width: 100%;
+  margin-top: 30px;
+  /* margin-left: 20px; */
+}
+.top span {
+  margin-left: 20px;
+  font-size: 16px;
+}
+.bottom span {
+  margin-left: 20px;
+  font-size: 16px;
+}
+.bottom li {
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #646464;
+  cursor: pointer;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.bottom li:hover {
+  background: rgba(12, 137, 201, 0.21);
+  transition: all 0.5s;
+}
+/* to center the icons and the texts in the sidebar */
+.flex {
+  align-items: center;
+}
+
+.bottom .active {
+  width: 100%;
+  /* border-radius: 10px; */
+  color: #028bcc;
+  background: rgba(12, 137, 201, 0.21);
+}
+
+/* ---------- sidebar responsiveness ---------- */
+.bars {
+  display: none;
+}
+
+/* --------------- small screen -------------- */
+
+@media only screen and (max-width: 1200px) {
+  /*Tablets [601px -> 1200px]*/
+
+  .logo img {
+    width: 140px;
+    height: 80px;
+  }
+  .bottom li {
+    margin-right: 15px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .logo img {
+    width: 160px;
+    height: 80px;
+  }
+  .sidebar {
+    position: fixed;
+    height: 100%;
+    overflow: scroll;
+  }
+  .bars {
+    display: block;
+    margin-top: 30px;
+    padding: 0px 10px;
+    font-size: 22px;
+  }
+
+  .bottom li {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  /* small phone */
+
+  .sidebar {
+    position: fixed;
+    height: 100%;
+    overflow: scroll;
+  }
+  .bars {
+    display: block;
+    margin-top: 30px;
+    padding: 0px 10px;
+    font-size: 22px;
+  }
+
+  .bottom li {
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  .bottom span {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,270 @@
+.dash {
+  display: flex;
+  height: 100%;
+
+  /* position: absolute; */
+}
+
+.dashContainer {
+  /* margin-top: 100px; */
+  background-color: #f3f4f6;
+  padding: 50px 40px;
+  flex: 4;
+}
+
+.dashContainer h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.dashCards {
+  display: flex;
+  gap: 5px;
+}
+.dash-left {
+  flex: 1;
+}
+.dash-right {
+  flex: 1;
+}
+
+.dash-mainCard {
+  background: linear-gradient(180deg, #028bcc 0%, #0471a6 59.71%, #055983 100%);
+  border-radius: 20px;
+  width: 100%;
+  height: 220px;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  color: #fff;
+}
+.loan-mainCard {
+  background: black;
+  border-radius: 20px;
+  width: 100%;
+  height: 220px;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  color: #fff;
+}
+.dash-transactionHistory-btn {
+  margin-top: 4rem;
+  color: black;
+  background-color: #fff;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 3px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.loan-btn {
+  margin-top: 6rem;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* ---------------- links cards --------------- */
+.linkCard {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #e5e7eb;
+  width: 100%;
+  height: 90px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.txt .title {
+  color: #0471a6;
+  font-weight: 600;
+}
+.txt .desc {
+  font-size: 12px;
+}
+.linkCards {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.illustration {
+  position: absolute;
+  right: 3px;
+  bottom: 2px;
+}
+.m-icon {
+  width: 129px;
+  height: 134px;
+}
+/* ------------------- first burger test ------------------ */
+/* * {
+  margin: 0;
+  box-sizing: border-box;
+} */
+
+/* ---------------- Navbar and burger menu ------------------ */
+/* nav {
+  width: 100%;
+  height: 5em;
+  background-color: rgb(37, 39, 53);
+  display: flex;
+  justify-content: flex-start;
+  padding: 1em;
+}
+
+.burger-menu {
+  height: 100%;
+  width: 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.burger-bar {
+  width: 4em;
+  height: 0.5em;
+  background-color: rgb(0, 183, 255);
+  border-radius: 0.5em;
+}
+
+.menu {
+  width: 50%;
+  height: 100vh;
+  background-color: rgb(154, 181, 240);
+  position: absolute;
+  top: 0;
+  z-index: -1;
+} */
+
+/* ------------- sliding menu ------------------ */
+/* .hidden {
+  display: none;
+}
+
+.visible {
+  display: inherit;
+} */
+
+/* ----- animations--------- */
+/* clicked */
+/* .burger-bar.clicked:nth-child(1) {
+  transform: rotate(45deg) translate(0.75em, 1.25em);
+  transition: ease-out 0.5s;
+}
+
+.burger-bar.clicked:nth-child(2) {
+  transform: scale(0.1);
+  transition: ease-out 0.5s;
+}
+
+.burger-bar.clicked:nth-child(3) {
+  transform: rotate(135deg) translate(-0.5em, 1em);
+  transition: ease-out 0.5s;
+} */
+
+/* unclicked */
+/* .burger-bar.unclicked {
+  transform: rotate(0) translate(0);
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+} */
+
+/* --------- / Navbar and burger menu --------- */
+
+/* --------------- small screen --------------- */
+@media only screen and (max-width: 1200px) {
+  /*Tablets [601px -> 1200px]*/
+
+  .dashContainer {
+    padding: 20px 30px;
+    width: 100%;
+  }
+  .dash-transactionHistory-btn {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 3px 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .loan-btn {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .linkCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .illustration {
+    width: 100px;
+    height: 100px;
+    right: -10px;
+  }
+}
+@media only screen and (max-width: 860px) {
+  /* weird screens */
+  .m-icon {
+    height: 110px;
+    width: 100px;
+  }
+  .linkCards .title {
+    font-size: 14px;
+  }
+  .linkCard .desc {
+    font-size: 10px;
+  }
+  .dashCards {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .illustration {
+    width: 80px;
+    height: 80px;
+    right: -10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /*Big smartphones [426px -> 600px]*/
+
+  .dashContainer h1 {
+    text-align: center;
+    font-size: 33px;
+  }
+  .dashCards {
+    margin: 30px 0px;
+    flex-direction: column;
+  }
+  .dash-mainCard {
+    width: 100%;
+    height: 240px;
+  }
+  .loan-mainCard {
+    width: 100%;
+    height: 240px;
+  }
+
+  .dash-transactionHistory-btn {
+    margin-top: 5rem;
+  }
+  .loan-btn {
+    margin-top: 7rem;
+  }
+  .linkCards {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+}

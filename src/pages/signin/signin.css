@@ -1,0 +1,225 @@
+.signin {
+  background-color: #f3f4f6;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.sign-btn-top {
+  padding: 10px;
+  width: 109px;
+  height: 49px;
+  right: 50px;
+  top: 50px;
+  background: #ffffff;
+  border-radius: 10px;
+  color: #028bcc;
+  font-weight: 700;
+  font-size: 14px;
+  z-index: 999;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 16rem;
+  margin-top: 1rem;
+}
+
+.right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.right img {
+  max-height: 100vh;
+}
+
+.special {
+  color: #028bcc;
+}
+
+.heading {
+  font-weight: 600;
+  font-size: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.heading p {
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  margin-top: 20px;
+  height: 50px;
+  background-color: #e5e7eb;
+  padding-left: 18px;
+  border-radius: 8px;
+  position: relative;
+}
+.input input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  margin-left: 10px;
+}
+
+.input input::placeholder {
+  font-size: 14px;
+  color: #646464;
+}
+.sign-icon {
+  color: #028bcc;
+  font-size: 22px;
+}
+.forgot {
+  color: #028bcc;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.login-btn {
+  width: 170px;
+  height: 50px;
+  background: #028bcc;
+  border-radius: 7px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 30px;
+}
+.sign-btn-bottom {
+  display: none;
+}
+
+.eye-icon {
+  color: #028bcc;
+  font-size: 20px;
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+.sign-in-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+/* image for the small screen */
+.small-img {
+  display: none;
+}
+
+/* --------------- other screens -------------- */
+
+@media only screen and (max-width: 1400px) {
+  .left {
+    margin-left: 13rem;
+    width: 45%;
+    padding-right: 3rem;
+  }
+
+  /* .right img {
+    display: none;
+  } */
+}
+
+@media only screen and (max-width: 1190px) {
+  /*weird screens*/
+  .right img {
+    display: none;
+  }
+  .main {
+    padding: 20px;
+    margin: 50px 20px;
+  }
+  .left {
+    margin: 0;
+    width: 100%;
+    padding-right: 0;
+  }
+
+  /* ------ the smaller img on mobile view ------ */
+  /* .small-img {
+    display: block;
+  }
+  .small-img img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    z-index: 1;
+  } */
+}
+@media only screen and (max-width: 600px) {
+  /*Big smartphones [426px -> 600px]*/
+
+  .left {
+    width: 100%;
+  }
+  .sign-btn-top {
+    display: none;
+  }
+  .sign-in-nav {
+    justify-content: center;
+    align-items: center;
+  }
+  .sign-logo {
+    margin-top: 30px;
+  }
+  .left {
+    margin-left: 0;
+    z-index: 99;
+  }
+  /* .right img {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+  } */
+
+  .login-btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .sign-btn-bottom {
+    display: block;
+    padding: 10px;
+    width: 100%;
+    height: 49px;
+    background: #ffffff;
+    border-radius: 10px;
+    color: #028bcc;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .sign-in-nav {
+    padding: 0px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+  .main {
+    margin: 0px 0px;
+  }
+  .signin {
+    padding: 0;
+  }
+}

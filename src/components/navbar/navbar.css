@@ -1,0 +1,21 @@
+.navbar {
+  display: flex;
+  align-items: flex-end;
+}
+.notification-icon {
+  color: #028bcc;
+  font-size: 20px;
+  margin-right: 50px;
+  cursor: pointer;
+}
+.profile-img {
+  align-items: center;
+  justify-content: space-between;
+}
+.hr {
+  background-color: black;
+  height: 1px;
+  margin: 20px 0px;
+  width: 1000px;
+  top: 70px;
+}
